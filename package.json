@@ -1,0 +1,27 @@
+{
+  "name": "app-agua",
+  "version": "1.0.0",
+  "description": "Aplicacion multiplataforma para efectuar facturas para un negocio de suplir agua potable",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adriancordero12/app-agua.git"
+  },
+  "keywords": [
+    "multiplataforma",
+    "efectuar",
+    "facturas"
+  ],
+  "author": "Adrian Cordero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adriancordero12/app-agua/issues"
+  },
+  "homepage": "https://github.com/adriancordero12/app-agua#readme",
+  "devDependencies": {
+    "electron": "^13.1.7"
+  }
+}
