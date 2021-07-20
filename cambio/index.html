@@ -1,47 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <!-- <meta http-equiv="content-Security-Policy" content="default-src 'self; script-src 'self">
     <meta http-equiv="X-content-Security-Policy" content="default-src 'self; script-src 'self"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Aplicación de agua</title> 
+    <title>Cambio de Precio</title> 
 </head>
-<body bgcolor="#1F76ED" onkeypress="keyboard(event)">
+<body bgcolor="#1F76ED">
 
     <!-- onkeypress="keyboard(event)" -->
 
-<!-- <div onkeypress="keyboard(event)"> -->
 
 
+<div onkeypress="keyboard(event)">
+
+<div class="img">
+    <img src="../img/flecha.png" id="img" onclick="back()">
+</div>
 
     <div class="container" >
 
-        <input type="text" name="cantidad" id="canti" autofocus placeholder="Cantidad de botellones" onkeyup="getInput()" onpointerenter="getInput()">
+        <div class="cambio-precio">Cambio de Precio</div>
+
+        <input type="text" name="cantidad" id="canti" autofocus placeholder=" Cantidad de botellones">
+
+        <input type="text" name="cambio" id="cambio" placeholder=" Nuevo precio">
 
         <div class="button">
             <div class="enter" id="enter" onclick="enter()">
-                <!-- onclick="getValueInput()" -->
                 Enter
-            </div>
-            <div class="cambio" onclick="cambio()">
-                Cambio de precio 
             </div>
         </div>
 
 
         <p id="demo"></p>
 
-        <p id="inputt"></p>
-
     </div>
 
 
 
-<!-- </div> -->
 
+</div>
 
 
 
@@ -49,9 +52,6 @@
 
     <script src="index.js"></script>
 
-    <script src="factura/"></script>
-
-    <!-- <script src="renderer.js"></script> -->
     
 </body>
 </html>

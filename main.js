@@ -3,8 +3,8 @@ const path = require('path');
 
 function crearVentanaPrincipal(){
     let ventanaPrincipal = new BrowserWindow({
-        width: 800,
-        height: 600,
+        width: 1200,
+        height: 800,
         webPreferences: {
             preload: path.join(__dirname, 'preload.js')
         }
@@ -15,3 +15,22 @@ function crearVentanaPrincipal(){
 }
 
 app.whenReady().then(crearVentanaPrincipal);
+
+app.on('window-all-closed', function(){
+    if(process.platform === 'darwin'){
+        app.quit();
+    }
+});
+
+app.on('activate', function(){
+    if(BrowserWindow.getAllWindows().length === 0){
+        crearVentanaPrincipal();
+
+    }
+})
+
+
+
+
+
+
