@@ -3,13 +3,17 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
+
+
     <!-- <meta http-equiv="content-Security-Policy" content="default-src 'self; script-src 'self">
-    <meta http-equiv="X-content-Security-Policy" content="default-src 'self; script-src 'self"> -->
+    <meta http-equiv="X-content-Security-Policy" content="default-src 'self; script-src 'self">
+     -->
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Aplicación de agua</title> 
 </head>
-<body bgcolor="#1F76ED" onkeypress="keyboard(event)">
+<body bgcolor="#1F76ED" onkeypress="keyboard(event) ">
 
     <!-- onkeypress="keyboard(event)" -->
 
@@ -19,8 +23,8 @@
 
     <div class="container" >
 
-        <input type="text" name="cantidad" id="canti" autofocus placeholder="Cantidad de botellones" onkeyup="getInput()" onpointerenter="getInput()">
-
+        <input type="text" name="cantidad" id="canti" autofocus placeholder="Cantidad de botellones" onkeyup="getInput()" on>
+                                                                                                                <!-- onpointerenter="getInput()" -->
         <div class="button">
             <div class="enter" id="enter" onclick="enter()">
                 <!-- onclick="getValueInput()" -->
@@ -31,10 +35,17 @@
             </div>
         </div>
 
+        <p id="fd"></p>
 
         <p id="demo"></p>
 
-        <p id="inputt"></p>
+        <p id="error"></p>
+
+        <p id="inputt">
+            <p id="obtener"></p>
+        </p>
+
+        
 
     </div>
 
@@ -49,7 +60,7 @@
 
     <script src="index.js"></script>
 
-    <script src="factura/"></script>
+    <!-- <script src="factura/"></script> -->
 
     <!-- <script src="renderer.js"></script> -->
     

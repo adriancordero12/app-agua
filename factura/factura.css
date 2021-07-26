@@ -5,26 +5,26 @@
 
 }
 .container{
-    border: 1px rgb(0, 0, 0) solid;
-    width: 310px;
-    height: 330px;
-    margin: auto;
-    margin-top: 8vh;
+    /* border: 1px rgb(0, 0, 0) solid; */
+    width: 260px;
+    /* margin: auto;
+    margin-top: 8vh; */
 }
 .header{
     text-align: center;
-    margin-top: 25px;
-    font-size: 23px;
+    margin-top: 18px;
+    font-size: 20px;
+    
 }
 .direccion{
     text-align: center;
-    font-size: 15px;
+    font-size: 13px;
     margin-top: 15px;
 
 }
 .telefono{
     text-align: center;
-    font-size: 15px;
+    font-size: 14px;
     margin-top: 10px;
 }
 .divi{
@@ -35,7 +35,7 @@
 }
 .fecha{
     margin-top: 8px;
-    font-size: 16px;
+    font-size: 15px;
 
 }
 .hora{
@@ -48,21 +48,26 @@
 
 }
 .descripcion{
-    margin-left: 12px;
+    margin-left: 10px;
     text-align: center;
-    font-size: 17px;
+    font-size: 14px;
 }
 .canti{
-    margin-left: 25px;
-    font-size: 17px;
+    margin-left: 10px;
+    font-size: 14px;
+}
+.itbis{
+    margin-left: 10px;
+    font-size: 14px;
 }
 .precio{
-    margin-left: 23px;
-    font-size: 17px; 
+    margin-left: 10px;
+    font-size: 14px; 
 }
-.importe{
-    margin-left: 24px;
-    font-size: 17px;
+.importee{
+    margin-left: 10px;
+    margin-right: 5px;
+    font-size: 14x;
 }
 .resultado{
     /* background: crimson; */
@@ -70,17 +75,22 @@
     
 }
 .descri{
-    margin-left: 17px;
+    margin-left: 14px;
 }
 .cant{
-    margin-left: 60px;
+    margin-left: 30px;
+    font-size: 15px;
     
 }
+.itbi{
+    margin-left: 20px;
+    font-size: 15px;
+}
 .preci{
-    margin-left: 50px;
+    margin-left: 23px;
 }
 .impo{
-    margin-left: 55px;
+    margin-left: 33px;
 }
 
 
@@ -89,12 +99,13 @@
 .container-total{
     display: flex;
     justify-content: flex-end;
+    margin-bottom: 20px;
  
 }
 .total{
     /* background: chocolate; */
     margin-top: 35px;
-    margin-right: 25px;
+    margin-right: 18px;
     font-size: 18px;
     display: flex;
 }

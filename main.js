@@ -28,9 +28,3 @@ app.on('activate', function(){
 
     }
 })
-
-
-
-
-
-

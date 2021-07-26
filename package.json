@@ -1,7 +1,7 @@
 {
   "name": "app-agua",
   "version": "1.0.0",
-  "description": "Aplicacion multiplataforma para efectuar facturas para un negocio de suplir agua potable",
+  "description": "Aplicacion multiplataforma en computadoras para efectuar facturas para un negocio de suplir agua potable",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
