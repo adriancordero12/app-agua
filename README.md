@@ -1,14 +1,14 @@
 # app-agua
 
-Aplicacion multiplataforma en computadoras para efectuar facturas para un negocio de suplir agua potable
+Aplicación multiplataforma en computadoras para efectuar facturas, para un negocio de agua potable.
 
 # Debes instalar:
 
 1. Node.js
 2. Git
-3. NPM 
+3. NPM (CLI {npm install -g})
 
-# Vamos a CLI donde pondremos:
+# Vamos a una Linea de comandos donde pondremos:
 
 git clone https://github.com/adriancordero12/app-agua.git
 
@@ -18,16 +18,22 @@ cd app-agua
 
 # Luego instalamos todos los paquetes con:
 
-npm install o npm i
+"npm install" o "npm i"
 
-# Estando en la carpeta "app-agua", para poner a correr el programa ponernos:
+# Estando en la carpeta "app-agua", ponermos a correr el programa:
 
-npm start 
+"npm start"
 
+# Para hacer un ejecutable de la aplicación, debemos instalar una dependecia
 
+"npm i electron-packager"
 
+# Por ultimo en nuestra linea de comandos, introducimos el comando depende de nuestra plataforma y la arquitectura de unos computador. 
 
+macOs:
 
 electron-packager . --platform=darwin --arch=x64
+
+Windows:
 
 electron-packager . --platform=win32 --arch=x64

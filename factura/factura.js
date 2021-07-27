@@ -1,61 +1,30 @@
-// import { ho } from '../index.js'
+//Cargar ventana
 
-// document.write(canti)
+window.onload = function() { window.print(); }
 
-// console.log(canti)
+// Fecha y Hora
+let hoy = new Date();
+let fecha = hoy.getDate() + '-' + ( hoy.getMonth() + 1 ) + '-' + hoy.getFullYear();
+let ho = hoy.getHours();
+let m = hoy.getMinutes();
+m = checkTime(m);
 
-// function printDiv(printableArea) {
-//     var printContents = document.getElementById(printableArea).innerHTML;
-//     var originalContents = document.body.innerHTML;
+function checkTime(i) {
+if (i < 10) {i = "0" + i}; 
+return i;
+}
 
-//     document.body.innerHTML = printContents;
+let hora = ho + ":" + m;
+let fechaYHora = fecha + ' ' + hora;
+document.getElementById('fecha').innerHTML = fechaYHora;
 
-//     window.print();
+//
 
-//     document.body.innerHTML = originalContents;
-// }
-
-// var gAutoPrint = true;
-
-//     function processPrint(){
-
-//     if (document.getElementById != null){
-//     var html = '<HTML>\n<HEAD>\n';
-//     if (document.getElementsByTagName != null){
-//     var headTags = document.getElementsByTagName("head");
-//     if (headTags.length > 0) html += headTags[0].innerHTML;
-//     }
-
-//     html += '\n</HE' + 'AD>\n<BODY>\n';
-//     var printReadyElem = document.getElementById("printMe");
-
-//     if (printReadyElem != null) html += printReadyElem.innerHTML;
-//     else{
-//     alert("Error, no contents.");
-//     return;
-//     }
-
-//     html += '\n</BO' + 'DY>\n</HT' + 'ML>';
-//     var printWin = window.open("","processPrint");
-//     printWin.document.open();
-//     printWin.document.write(html);
-//     printWin.document.close();
-
-//     if (gAutoPrint) printWin.print();
-//     } else alert("Browser not supported.");
-
-//     }
-
-
-//   window.onload = function() { window.print(); }
-
-
-// const { ho } = require('../index');
-
-// console.log(ho);
-
-// document.write(ho);
-
-
-// ///////////////////////////////////////////////////////////////////////////////////
+function cerrar(){
+  
+    window.close("factura.html");
+  
+  }
+setInterval("cerrar()",6000);
+  
 

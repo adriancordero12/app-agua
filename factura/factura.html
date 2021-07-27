@@ -8,108 +8,32 @@
     <title>Factura</title>
     <script>
 
-    // function imprSelec(nombre) {
-    //     var ficha = document.getElementById(nombre);
-        // var ventimp = window.open(' ', 'popimpr');
-        // var ventimp = window.open();
-        
 
-    //     ventimp.document.write( ficha.innerHTML );
-    //     ventimp.document.close();
-    //     ventimp.print( );
-    //     ventimp.close();
-    //   } 
-
-        // function imprSelec(nombre) {
-        //   var ficha = document.getElementById(nombre);
-        //   var ventimp = window.print(' ', 'popimpr');
-        //   ventimp.document.write( ficha.innerHTML );
-        //   ventimp.document.close();
-        //   ventimp.print( );
-        //   ventimp.close();
-        // }
-
-// win = new BrowserWindow({
-//   width: 378, 
-//   height: 566, 
-//   show: true, 
-//   webPreferences: {
-//     webSecurity: false,
-//     plugins: true
-//   }
-// });
-
-// load PDF
-//win.loadURL('file:///Users/adriancordero/Documents/Mis%20Tareas/Base%20de%20datos%20/3_1practica.pdf');
-
-// if pdf is loaded start printing
-// win.webContents.on('did-finish-load', () => {
-//   win.webContents.print({silent: true, printBackground:true});
-// });
-// const ch = require('os');
-
-// switch (process.platform) {
-//     case 'darwin':
-//     case 'linux':
-//         ch.exec(
-//             'lp ' + pdf.filename, (e) => {
-//                 if (e) {
-//                     throw e;
-//                 }
-//             });
-//         break;
-//     case 'win32':
-//         ch.exec(
-//             'ptp ' + pdf.filename, {
-//                 windowsHide: true
-//             }, (e) => {
-//                 if (e) {
-//                     throw e;
-//                 }
-//             });
-//         break;
-//     default:
-//         throw new Error(
-//             'Platform not supported.'
-//         );
-// }  
-        </script>
+    </script>
 </head>
-<body >
-
-<!-- onload="window.print()" -->
+<body>
     <div class="container" id="container">
         <div class="header">
             Agua Acalar
         </div>
         
         <div class="direccion">
-            <p>Calle enriquillo #18, esq. Joel camero damosss, frailes ll, santo domingo este</p>
+        <p>Calle Enriquillo #18, Esq. Fausto Cejas Rodríguez, Los Frailes ||</p>
         </div>
 
         <div class="telefono">
-            <b>Tel: 802-829-7432/ Ws: 839-293-0987</b>
+            <b>Tel: 829-535-8907 / Ws: 829-535-8907</b>
         </div>
-
-        <!-- <div class="divi">
-            <p>--------------------------------------------------------</p>
-        </div> -->
 
         <div class="time">
-            <div class="fecha">
-                Fecha: 12/21/21 12:05:09
+            <div class="fecha" id="fecha">
+                <!-- Fecha: 18/10/21 12:05 -->
             </div>
-            <!-- <div class="hora">
-                Hora:
-            </div> -->
+    
         </div>
         <div class="divi">
-            <p>----------------------------------------------</p>
-        </div>
-
-        <!-- <div class="divi">
             <p>--------------------------------------------------------</p>
-        </div> -->
+        </div>
 
         <div class="items">
             <div class="descripcion">Descripcion</div>
@@ -120,7 +44,7 @@
         </div>
 
         <div class="divi">
-            <p>----------------------------------------------</p>
+            <p>--------------------------------------------------------</p>
         </div>
 
         <div class="resultado">
@@ -153,49 +77,14 @@
 
     </div>
  
-    <!-- <a href="javascript:imprSelec('container')" >Imprimir texto</a> -->
-
-
- <!-- function imprSelec(nombre) {
-        var ficha = document.getElementById(nombre);
-        var ventimp = window.open(' ', 'popimpr');
-        ventimp.document.write( ficha.innerHTML );
-        ventimp.document.close();
-        ventimp.print( );
-        ventimp.close();
-      } -->
-
-      <!-- <script type="text/javascript">
-        window.onload = function imprSelec(nombre) { 
-        // window.print(); 
-        var ficha = document.getElementById(nombre);
-        var ventimp = window.print(' ', 'popimpr');
-        ventimp.document.write( ficha.innerHTML );
-        ventimp.document.close();
-        ventimp.print( );
-        ventimp.close(); }
-     </script> -->
-
-     <script type="text/javascript">
+    
+     <!-- <script type="text/javascript">
           
-        //    window.onload = function() { window.print(); }
-     </script> 
+           window.onload = function() { window.print(); }
+     </script>  -->
 
 
-<script type="text/javascript">
-    
-    // window.print();
-
-   
-    
-    </script>
-
-
-    <!-- <script src="factura.js"></script> -->
-    <script src="../index.js"></script>
-
-    <script src="index.js"></script>
-
+    <script src="factura.js"></script>
    
   
 </body>

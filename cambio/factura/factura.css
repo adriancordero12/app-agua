@@ -1,29 +1,29 @@
 *{
     padding: 0%;
     margin: 0;
+    
 
 }
 .container{
-    border: 1px rgb(0, 0, 0) solid;
-    width: 310px;
-    height: 330px;
-    margin: auto;
-    margin-top: 8vh;
+    /* border: 1px rgb(0, 0, 0) solid; */
+    width: 300px;
+  
 }
 .header{
     text-align: center;
-    margin-top: 25px;
-    font-size: 23px;
+    margin-top: 18px;
+    font-size: 25px;
+    
 }
 .direccion{
     text-align: center;
-    font-size: 15px;
+    font-size: 17px;
     margin-top: 15px;
 
 }
 .telefono{
     text-align: center;
-    font-size: 15px;
+    font-size: 16px;
     margin-top: 10px;
 }
 .divi{
@@ -34,52 +34,62 @@
 }
 .fecha{
     margin-top: 8px;
-    font-size: 16px;
+    font-size: 18px;
 
 }
 .hora{
-    font-size: 17px;
+    font-size: 18px;
     
 }
 .items{
-    /* background: coral; */
     display: flex;
 
 }
 .descripcion{
-    margin-left: 12px;
+    margin-left: 10px;
     text-align: center;
-    font-size: 17px;
+    font-size: 16px;
 }
 .canti{
-    margin-left: 25px;
-    font-size: 17px;
+    margin-left: 10px;
+    font-size: 16px;
+}
+.itbis{
+    margin-left: 10px;
+    font-size: 16px;
 }
 .precio{
-    margin-left: 23px;
-    font-size: 17px; 
+    margin-left: 10px;
+    font-size: 16px; 
 }
-.importe{
-    margin-left: 24px;
-    font-size: 17px;
+.importee{
+    margin-left: 10px;
+    margin-right: 5px;
+    font-size: 16x;
 }
 .resultado{
-    /* background: crimson; */
     display: flex;
     
 }
 .descri{
-    margin-left: 17px;
+    margin-left: 14px;
 }
 .cant{
-    margin-left: 60px;
+    margin-left: 35px;
+    font-size: 17px;
     
 }
+.itbi{
+    margin-left: 27px;
+    font-size: 17px;
+}
 .preci{
-    margin-left: 50px;
+    margin-left: 23px;
+    font-size: 17px;
 }
 .impo{
-    margin-left: 55px;
+    margin-left: 33px;
+    font-size: 17px;
 }
 
 
@@ -88,16 +98,17 @@
 .container-total{
     display: flex;
     justify-content: flex-end;
+    margin-bottom: 20px;
  
 }
 .total{
-    /* background: chocolate; */
     margin-top: 35px;
-    margin-right: 25px;
-    font-size: 18px;
+    margin-right: 18px;
+    font-size: 20px;
     display: flex;
 }
 #totalA{
     margin-left: 30px;
+    font-size: 20px;
 }
 
