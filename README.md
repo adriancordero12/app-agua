@@ -20,15 +20,15 @@ cd app-agua
 
 "npm install" o "npm i"
 
-# Estando en la carpeta "app-agua", ponermos a correr el programa:
+# Estando en la carpeta "app-agua", ponemos a correr el programa:
 
 "npm start"
 
-# Para hacer un ejecutable de la aplicación, debemos instalar una dependecia
+# Para hacer un ejecutable de la aplicación, debemos instalar una dependencia
 
 "npm i electron-packager"
 
-# Por ultimo en nuestra linea de comandos, introducimos el comando depende de nuestra plataforma y la arquitectura de unos computador. 
+# Por ultimo en nuestra linea de comandos, introducimos el comando, depende de nuestra plataforma y la arquitectura de unos computador. 
 
 macOs:
 
