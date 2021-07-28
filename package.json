@@ -25,6 +25,7 @@
     "electron": "^13.1.7"
   },
   "dependencies": {
-    "keypress": "^0.2.1"
+    "keypress": "^0.2.1",
+    "moment": "^2.29.1"
   }
 }
