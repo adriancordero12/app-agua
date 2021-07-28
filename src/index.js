@@ -1,3 +1,13 @@
+//Refrescar página cada 50 segundos 
+
+function actualizar(){
+  
+  location.reload(true);
+
+}
+setInterval("actualizar()",50000);
+
+// Variables globales
 var cantidad;
 var precio;
 var boton = document.getElementById('enter');
@@ -14,6 +24,8 @@ let ho = hoy.getHours();
 let m = hoy.getMinutes();
 m = checkTime(m);
 
+console.log(ho, "1");
+
 function checkTime(i) {
     if (i < 10) { i = "0" + i };
     return i;
@@ -22,6 +34,8 @@ function checkTime(i) {
 let hora = ho + ":" + m;
 let fechaYHora = fecha + ' ' + hora;
 document.getElementById('fecha').innerHTML = fechaYHora;
+
+console.log(ho, "2");
 
 boton.addEventListener("click", e => {
     e.preventDefault();
