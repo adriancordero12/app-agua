@@ -15,7 +15,7 @@ document.getElementById('totalB').innerHTML = (cantidad * precio);
 
 // Cargar ventana para imprimir 
 
-//window.onload = function() { window.print(); }
+window.onload = function() { window.print(); }
 
 // Fecha y Hora
 let hoy = new Date();
