@@ -1,6 +1,3 @@
-
-
-
 var cantidad;
 var precio;
 var boton = document.getElementById('enter');
@@ -10,8 +7,9 @@ setTimeout(() => {
 }, 1);
 
 //Fecha y Hora
+const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
 let hoy = new Date();
-let fecha = hoy.getDate() + '-' + (hoy.getMonth() + 1) + '-' + hoy.getFullYear();
+let fecha = hoy.getDate() + '-' + meses[hoy.getMonth()] + '-' + hoy.getFullYear();
 let ho = hoy.getHours();
 let m = hoy.getMinutes();
 m = checkTime(m);
@@ -49,8 +47,12 @@ const enviar = () => {
     localStorage.setItem("precio", precio);
     localStorage.setItem("cantidad", cantidad);
 
+    document.getElementById("cantidad").value = "";
+
+    noNull()
     //let url = "file:///Users/adriancordero/Documents/Proyectos/app-agua/cambio/factura/factura.html"
     let url = "factura/factura.html";
     window.open(url, "Multiplataforma", "width=300, height=335");
-
 }
+
+

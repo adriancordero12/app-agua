@@ -7,14 +7,13 @@ console.log(precio, cantidad)
 document.getElementById('cantidad').innerHTML = cantidad;
 document.getElementById('precio').innerHTML = precio;
 
-
 document.getElementById('totalA').innerHTML = (cantidad * precio);
 document.getElementById('totalB').innerHTML = (cantidad * precio);
 
 
 
 
-// Cargar ventana
+// Cargar ventana para imprimir 
 
 //window.onload = function() { window.print(); }
 
@@ -35,9 +34,9 @@ let fechaYHora = fecha + ' ' + hora;
 document.getElementById('fecha').innerHTML = fechaYHora;
 
 
-// function cerrar(){
+function cerrar(){
   
-//     window.close("factura.html");
+    window.close("factura.html");
   
-//   }
-// setInterval("cerrar()",6000);
+  }
+setInterval("cerrar()",6000);

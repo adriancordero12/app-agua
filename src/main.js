@@ -1,11 +1,5 @@
 const {app, BrowserWindow} = require('electron');
 const path = require('path');
-const moment = require('moment');
-const now = moment();
-
-moment().format('LLL');
-
-console.log(now.format('LLL'));
 
 function crearVentanaPrincipal(){
     let ventanaPrincipal = new BrowserWindow({
