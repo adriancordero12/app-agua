@@ -5,7 +5,7 @@ function crearVentanaPrincipal(){
     let ventanaPrincipal = new BrowserWindow({
         width: 1300,
         height: 800,
-        icon: __dirname + '../img/logo.ico',
+        icon: __dirname + '../img/logo.svg',
         webPreferences: {
             preload: path.join(__dirname, 'preload.js')
         }

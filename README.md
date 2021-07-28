@@ -26,7 +26,7 @@ cd app-agua
 
 # Para hacer un ejecutable de la aplicación, debemos instalar una dependencia
 
-"npm i electron-packager"
+"npm i electron-packager -g"
 
 # Por ultimo en nuestra linea de comandos, introducimos el comando, depende de nuestra plataforma y la arquitectura de unos computador. 
 
